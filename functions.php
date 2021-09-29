@@ -49,7 +49,7 @@
 
     add_action( 'wp_enqueue_scripts', 'ijab_enqueue_hashed_scripts', 0 );
 
-// add hashed css files from build
+// Add hashed css files from build
     function ijab_enqueue_hashed_css() {
 
         $dirCSS = new DirectoryIterator(get_stylesheet_directory() . '/build/static/css');
@@ -78,3 +78,12 @@
     }
 
     add_action( 'wp_enqueue_scripts', 'ijab_enqueue_hashed_css', 0 );
+
+// Add theme support for WordPress's title
+    function ijab_theme_setup(){
+
+        add_theme_support( 'title-tag' );
+
+    }
+
+    add_action('after_setup_theme','ijab_theme_setup');

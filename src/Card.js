@@ -29,7 +29,6 @@ export default class Card extends Component {
 
         let selectedStyle = event.target.styles.value;
         let selectedLocation = event.target.locations.value;
-        let updatedRestaurants = '';
 
         HTTP.get(`wp-json/ijab/v1/restaurants/?location=${selectedLocation}&style=${selectedStyle}`)
         .then(res => {

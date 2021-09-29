@@ -1,12 +1,14 @@
 # Guide to My "Where to Eat" React App
 
-This project was bootstrapped with Create React App.  It's packaged inside a WordPress theme to make show how React can consume WordPress's REST API.  It also gives a convenient way to add more restaurants to the possible options.  
+This project was bootstrapped with Create React App.  It's packaged inside a WordPress theme to make show how React can consume WordPress's REST API.  It also gives a convenient way to add more restaurants to the possible options. 
+
+Demo: [https://where-to-eat.mystagingwebsite.com/](https://where-to-eat.mystagingwebsite.com/)
 
 ## Setup
 
-This app requires setting the environment prior to building.  This can be done in the /src/Environment.js file.  Change the `http://eat.local/` to the WordPress URL.  Then use npm run build to create a production version.
+This app requires setting the environment prior to building.  This can be done in the /src/Environment.js file.  Change the `https://where-to-eat.mystagingwebsite.com/` to the WordPress site URL.  Then use npm run build to create a production version.
 
-Sample data is included that can be imported into WordPress via Tools > Import.  It's important to activate the theme prior to importing the data.  
+Sample data is included that can be imported into WordPress via Tools > Import.  It's important to activate the theme prior to importing the data.
 
 ### Available Scripts
 
